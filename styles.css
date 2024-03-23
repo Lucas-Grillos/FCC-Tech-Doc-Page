@@ -6,20 +6,55 @@ html {
     padding: 0;
     margin: 0;
 }
+
 body {
     padding: 0;
     margin: 0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, li {
+    font-size: 16px;    
+}
+
+p, li, code {
+    color: 	#484848;
 }
 
 #nav-bar {
     width: 300px;
     height: 100vw;
     position: fixed;
-}   
+    border-right: 2px solid gray;
+}
+
+header > h1 {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 26px;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    border-top: 1px solid black;
+    list-style-type: none;
+    padding: 12px 30px;
+}
+
+.nav-link {
+    all: unset;
+    cursor: pointer;
+}
 
 #main-doc {
     position: absolute;
-    left: 320px;
+    left: 350px;
     top: 0;
     min-width: 600px;   
 }
