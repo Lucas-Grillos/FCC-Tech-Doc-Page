@@ -10,6 +10,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -23,11 +24,14 @@ p, li, code {
 
 #nav-bar {
     width: 300px;
-    height: 100vw;
+    height: 100%;
     position: fixed;
     border-right: 2px solid gray;
 }
 
+#nav-bar > header {
+    height: 70px;
+}
 header > h1 {
     text-align: center;
     font-weight: normal;
@@ -37,8 +41,11 @@ header > h1 {
 }
 
 #nav {
+    height: 80%;
     margin: 0;
     padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .nav-item {
@@ -54,7 +61,20 @@ header > h1 {
 
 #main-doc {
     position: absolute;
-    left: 350px;
+    left: 300px;
     top: 0;
-    min-width: 600px;   
+    min-width: 600px;
+    padding: 0 50px;       
+}
+
+.main-section {
+    padding-top: 20px;
+}
+
+.section-heading {
+    font-size: 24px;
+}
+
+.section-article {
+    padding-left: 20px;
 }
