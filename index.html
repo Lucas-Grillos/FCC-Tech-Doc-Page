@@ -13,7 +13,7 @@
         </header>
         <ul id="nav">
             <li>Introduciton</li>
-            <li>What you should already know</li>
+            <li>What you should know</li>
             <li>Display Attributes</li>
             <li>Flex Axis</li>
             <li>Flex Container</li>
@@ -23,7 +23,7 @@
     </nav>
     <main id="main-doc">
         <section class="main-section">
-            <header id="introduction">
+            <header class="section-heading" id="introduction">
                 INTRODUCTION
             </header>
             <p>
@@ -51,17 +51,83 @@
             </p>
         </section>
         <section class="main-section">
-            <header>WHAT YOU SHOULD KNOW</header>
+            <header class="section-heading" id="what-you-should-know">
+                WHAT YOU SHOULD KNOW
+            </header>
             <p>
                 Before you begin delving into learning the basics of the Flexbox
                 module, you should have a functional understanding of basic HTML
                 and the other forms of positioning elements such as:
             </p>
             <ul>
-                <li>The CSS loat property and it's attribute</li>
-                <li>Centering elements by using the CSS margin property</li>
-                <li>Positioning text with the CSS text-align property</li>
+                <li>The CSS float property and it's attribute/</li>
+                <li>Centering elements by using the CSS margin property.</li>
+                <li>Positioning text with the CSS text-align property.</li>
             </ul>
+        </section>
+        <section class="main-section">
+            <header class="section-heading" id="display-attributes">
+                DISPLAY ATTRIBUTES
+            </header>
+            <p>
+                CSS flexbox is only one of several attributes for the display
+                property. Some display properties set the behavor of the element
+                itself in the layout, and others (including flexbox) change how the
+                children of an element are positioned.
+
+                The display attributes that change the element's behavior itself are:
+            </p>
+            <ul>
+                <li>
+                    The block attribute, which generates the element on a block
+                    level, creating line breaks before and after the element
+                </li>
+                <li>
+                    The inline attribute, which doesn't generate breaks, and treats
+                    the element as if it should be one the same line (provided
+                    there is space)
+                </li>
+                <li>
+                    And, confusingly, the inline-block attribute. Inline-block 
+                    does not generate line-breaks before and after the element,
+                    but lets you set a width and height for the element, as well
+                    as maintain respect for the elements defined margin and padding
+                </li>
+            </ul>
+            <p>
+                When written as code, these attributes look like:
+            </p>
+            <code>
+                display: block;<br>
+                <span class="comment">/* or */</span><br>
+                display: inline;<br>
+                <span class="comment">/* or */</span><br>
+                display: inline-block;
+            </code>
+            <p>
+                The display attributes that alter the way it's children are laid out
+                are:
+            </p>
+            <ul>
+                <li>
+                    The flex attribute
+                </li>
+                <li>
+                    The grid attribute
+                </li>
+            </ul>
+            <p>
+                There is actually one more display attribute that is relevant here:
+            </p>
+            <code>
+                display: inline-flex;
+            </code>
+            <p>
+                By default the flex container behaves as a block-level element. By
+                setting it to inline-flex, it makes the container behave as an inline
+                element. There are use-cases for this, so keep it in the back of your
+                mind while coding.
+            </p>
         </section>
     <main>
 </body>
