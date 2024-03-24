@@ -32,6 +32,7 @@ p, li, code {
 #navbar > header {
     height: 70px;
 }
+
 header > h1 {
     text-align: center;
     font-weight: normal;
@@ -63,7 +64,7 @@ header > h1 {
     position: absolute;
     left: 300px;
     top: 0;
-    min-width: 600px;
+    min-width: 500px;
     padding: 0 50px 20px;       
 }
 
@@ -106,4 +107,17 @@ header > h1 {
 
 .section-article code {
     line-height: 18px;
+}
+
+@media (max-width: 800px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+
+    #main-doc {
+        position: static;
+    
+    }
 }
