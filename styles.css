@@ -113,11 +113,16 @@ header > h1 {
     #navbar {
         position: static;
         width: 100%;
+        border: none;
+    }
+
+    #nav {
+        border-top: 3px solid black;
         border-bottom: 3px solid black;
+        height: 150px;
     }
 
     #main-doc {
         position: static;
-    
     }
 }

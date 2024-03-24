@@ -21,7 +21,9 @@
             <a class="nav-link" href="#display-attributes"><li class="nav-item">
                     Display Attributes
             </li></a>
-            <a class="nav-link"><li class="nav-item">Flex Axis</li></a>
+            <a class="nav-link" href="#flex-axis"><li class="nav-item">
+                Flex Axis
+            </li></a>
             <a class="nav-link"><li class="nav-item">Flex Container</li></a>
             <a class="nav-link"><li class="nav-item">Flex Wrap</li></a>
             <a class="nav-link"><li class="nav-item">Flex Align and Justify</li></a>
@@ -145,6 +147,53 @@
                 </p>
             </article>
         </section>
+        <section class="main-section">
+            <header class="section-heading" id="flex-axis">
+                FLEX AXIS
+            </header>
+            <article class="section-article">
+                <p>
+                    When working with flexbox you need to keep in mind the two different
+                    axes; the main axis and the cross axis. Which is which depends on which way
+                    you've defined your flex area to run; either horizontally or vertically.
+                </p>
+                <p>
+                    Horizontal and vertical flow is defined respectively with the following
+                    attributes:
+                </p>
+                <div class="code">
+                    <code>
+                        flex-direction: row;<br>
+                        <span class="comment">/* or */</span><br>
+                        flex-direction: column;
+                    </code>
+                </div>
+                <p>
+                    If the flex-direction property were assigned with the row attribute, the main
+                    axis would run along the row, and the cross axis would run along the column.
+                    And vice-versa for if the property were assigned the column attribute.
+                </p>
+                <p>
+                    When your flex-direction is set to row, content within organizes itself, by 
+                    default, from left-to-right, with the first element on the left.
+                </p>
+                <p>
+                    What if you want to have your content organized in rows by start from 
+                    right-to-left, with your first item on the right side (Or a column starting
+                    from bottom-to-top, with the first element on the bottom?) This is easily
+                    accomplished in the flex axis:
+                </p>
+                <div class="code">
+                    <code>
+                        flex-direction: row-reverse;<br>
+                        <span class="comment">/* or */</span><br>
+                        flex-direction: column-reverse;
+                    </code
+                </div>
+                
+            </article>
+        </section>
+
     <main>
 </body>
 </html>
