@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>  
-    <nav id="nav-bar">
+    <nav id="navbar">
         <header>
             <h1>Flexbox Documentation</h1>
         </header>
@@ -18,7 +18,9 @@
             <a class="nav-link" href="#what-you-should-know"><li class="nav-item">
                 What you should know
             </li></a>
-            <a class="nav-link"><li class="nav-item">Display Attributes</li></a>
+            <a class="nav-link" href="#display-attributes"><li class="nav-item">
+                    Display Attributes
+            </li></a>
             <a class="nav-link"><li class="nav-item">Flex Axis</li></a>
             <a class="nav-link"><li class="nav-item">Flex Container</li></a>
             <a class="nav-link"><li class="nav-item">Flex Wrap</li></a>
@@ -72,11 +74,13 @@
                     <li>Centering elements by using the CSS margin property.</li>
                     <li>Positioning text with the CSS text-align property.</li>
                 </ul>
-                        </section>
-                        <section class="main-section">
-                <header class="section-heading" id="display-attributes">
-                    DISPLAY ATTRIBUTES
-                </header>
+            </article>
+        </section>
+        <section class="main-section">
+            <header class="section-heading" id="display-attributes">
+                DISPLAY ATTRIBUTES
+            </header>
+            <article class="section-article">
                 <p>
                     CSS flexbox is only one of several attributes for the display
                     property. Some display properties set the behavor of the element
@@ -104,13 +108,15 @@
                 <p>
                     When written as code, these attributes look like:
                 </p>
-                <code>
-                    display: block;<br>
-                    <span class="comment">/* or */</span><br>
-                    display: inline;<br>
-                    <span class="comment">/* or */</span><br>
-                    display: inline-block;
-                </code>
+                <div class="code">
+                    <code>
+                        display: block;<br>
+                        <span class="comment">/* or */</span><br>
+                        display: inline;<br>
+                        <span class="comment">/* or */</span><br>
+                        display: inline-block;
+                    </code>
+                </div>
                 <p>
                     The display attributes that alter the way it's children are laid out
                     are:
@@ -126,9 +132,11 @@
                 <p>
                     There is actually one more display attribute that is relevant here:
                 </p>
-                <code>
-                    display: inline-flex;
-                </code>
+                <div class="code">
+                    <code>
+                        display: inline-flex;
+                    </code>
+                </div>
                 <p>
                     By default the flex container behaves as a block-level element. By
                     setting it to inline-flex, it makes the container behave as an inline

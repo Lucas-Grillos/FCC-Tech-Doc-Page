@@ -22,14 +22,14 @@ p, li, code {
     color: 	#484848;
 }
 
-#nav-bar {
+#navbar {
     width: 300px;
     height: 100%;
     position: fixed;
     border-right: 2px solid gray;
 }
 
-#nav-bar > header {
+#navbar > header {
     height: 70px;
 }
 header > h1 {
@@ -64,11 +64,11 @@ header > h1 {
     left: 300px;
     top: 0;
     min-width: 600px;
-    padding: 0 50px;       
+    padding: 0 50px 20px;       
 }
 
 .main-section {
-    padding-top: 20px;
+    margin-top: 30px;
 }
 
 .section-heading {
@@ -77,4 +77,33 @@ header > h1 {
 
 .section-article {
     padding-left: 20px;
+}
+
+.section-article p {
+    margin: 0;  
+    margin: 20px 0;
+}
+
+.section-article > ul {
+    margin: 0;
+    padding: 0 0 0 60px;
+}
+
+.section-article > ul > li {
+    margin: 20px 0;
+}
+
+.code {
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    margin-left: 16px;  
+    padding: 16px;  
+}
+
+.comment {
+    color: forestgreen;
+}
+
+.section-article code {
+    line-height: 18px;
 }
