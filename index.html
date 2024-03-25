@@ -27,7 +27,9 @@
             <a class="nav-link" href="#flex-container"><li class="nav-item">
                 Flex Container
             </li></a>
-            <a class="nav-link"><li class="nav-item">Flex Wrap</li></a>
+            <a class="nav-link" href="#flex-wrap"><li class="nav-item">
+                Flex Wrap
+            </li></a>
             <a class="nav-link"><li class="nav-item">Flex Align and Justify</li></a>
             <a class="nav-link"><li class="nav-item">References</li></a>
         </ul>
@@ -258,8 +260,32 @@
                     </code>
                 </div>
             </article>
-        <section> 
-
+        <section>
+        <section class="main-section">
+            <header class="section-heading" id="flex-wrap">
+                FLEX WRAP
+            </header>
+            <article class="section-article">
+                <p>
+                    By default, a flex-container has their flex-wrap property set to nowrap. What does this
+                    mean? When a flex-container's width is exceeded by the number of flex-items, with no room
+                    left to shrink them further, the flex-items will overflow outside of the container.
+                </p>
+                <p>
+                    If, however, we have the flex-wrap set to wrap, the container pushes the overflowing items
+                    onto either a new row or column. The container will continue to expand to account for 
+                    new rows, potentially causing an overflow itself.
+                </p>
+                <p>
+                    Lastly, the flex-wrap property can also be set to row-reverse. This will cause what would
+                    have been the last row to come first, and the first row to come last. This does not 
+                    rearrange the order within each row/column, however.
+                </p> 
+            </article>
+        </section> 
+        <section class="main-section">
+            
+        </section>
     <main>
 </body>
 </html>
