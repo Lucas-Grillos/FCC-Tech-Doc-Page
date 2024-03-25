@@ -30,8 +30,12 @@
             <a class="nav-link" href="#flex-wrap"><li class="nav-item">
                 Flex Wrap
             </li></a>
-            <a class="nav-link"><li class="nav-item">Flex Align and Justify</li></a>
-            <a class="nav-link"><li class="nav-item">References</li></a>
+            <a class="nav-link" href="#flex-align-and-justify"><li class="nav-item">
+                Flex Align and Justify
+            </li></a>
+            <a class="nav-link" href="#references"><li class="nav-item">
+                References
+            </li></a>
         </ul>
     </nav>
     <main id="main-doc">
@@ -284,7 +288,78 @@
             </article>
         </section> 
         <section class="main-section">
-            
+            <header class="section-heading" id="flex-align-and-justify">
+                FLEX ALIGN AND JUSTIFY
+            </header>
+            <article class="section-article">
+                <p>
+                    When flexbox was first introduced, it caught the eye of web developers for its capability
+                    to simply achieve proper alignment of elements. Flexbox enables proper vertical and
+                    horizontal alignment across the main and cross axis. To center the block on the cross-axis, 
+                    the align-items property is used, and to center it on the main-axis, we use justify-content. 
+                </p>
+                <p>
+                    Within CSS, this looks like:
+                </p>
+                <div class="code">
+                    <code>
+                        justify-content: center;<br>
+                        align-items: center; 
+                    </code>
+                </div>
+                <p>
+                    When the flex-container has it's properties set to these attributes, it squashes any and
+                    all elments into the center of the container. Sometimes this can be what we want done,
+                    but there are other times when we want them to be organized differently. Check out and 
+                    experiment with these other attributes for the align-items and justify-content properties:
+                </p>
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>stretch</li>
+                    <li>space-evenly</li>
+                </ul>
+                <p>
+                    The justify-self property can also be set on individual flex-items within the 
+                    flex-container, and uses the same attributes listed above to justify the positions
+                    of children as fit.
+                </p>
+                <p>
+                    Lastly we have the gap property. Gap is used to define an empty space in the gutters 
+                    between your flex-items. If you have gap set to:
+                </p>
+                <div class="code">
+                    <code>
+                        gap: 15px;
+                    </code>
+                </div>
+                <p>
+                    ... then now matter how you have you elements positioned, or what direction you have 
+                    flex set to, there will always be a 15 pixel gap between the rows and columns of 
+                    your flex-items. If you want to individually set the rows and column size you can use:
+                </p>
+                <div class="code">
+                    <code>
+                        row-gap: 15px;<br>
+                        <span class="comment">/* or */</span><br>
+                        column-gap: 15px;
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section">
+            <header class="section-heading" id="references">
+                REFERENCES
+            </header>
+            <article class="section-article">
+                <p>
+                    If you'd like to read more, information for this documentation was gathered from
+                    the MDN Web Docs, and can be accessed 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout">here</a>
+                </p>
+            </article>
         </section>
     <main>
 </body>
