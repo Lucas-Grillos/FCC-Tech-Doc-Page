@@ -24,7 +24,9 @@
             <a class="nav-link" href="#flex-axis"><li class="nav-item">
                 Flex Axis
             </li></a>
-            <a class="nav-link"><li class="nav-item">Flex Container</li></a>
+            <a class="nav-link" href="#flex-container"><li class="nav-item">
+                Flex Container
+            </li></a>
             <a class="nav-link"><li class="nav-item">Flex Wrap</li></a>
             <a class="nav-link"><li class="nav-item">Flex Align and Justify</li></a>
             <a class="nav-link"><li class="nav-item">References</li></a>
@@ -187,12 +189,76 @@
                     <code>
                         flex-direction: row-reverse;<br>
                         <span class="comment">/* or */</span><br>
-                        flex-direction: column-reverse;
-                    </code
+                        flex-direction: column;
+                    </code>
                 </div>
-                
             </article>
-        </section>
+        <section class="main-section">
+            <header class="section-heading" id="flex-container">
+                FLEX CONTAINER
+            </header>
+            <article class="section-article">
+                <p>
+                    As with most CSS properties, some of it's initial values have a default
+                    value unless explicitly set. These include (but are not limited to):
+                </p>
+                <ul>
+                    <li>Flex-direction: set to default as 'row.'</li>
+                    <li>The items start along the edge of the main axis.</li>
+                    <li>
+                        The items do not stretch (using flex-grow) but can shrink (flex-shrink)
+                        along the main axis.
+                    </li>
+                    <li>The items will stretch to fit the size of the cross axis.</li>
+                    <li> The flex-basis property is set to auto.</li>  
+                </ul>
+                <p>
+                    The flex property is a property that sets how a flex item, that
+                    is, the child of an element with an property of display flex. Flex is shorthand
+                    for three properties:
+                </p>
+                <ul>
+                    <li>flex-grow</li>
+                    <li>flex-shrink</li>
+                    <li>flex-basis</li>
+                </ul>
+                <p>
+                    When the flex-container's main size is larger than the combined main sizes of 
+                    the flex items, the extra space is distributed among the flex items.
+                </p>
+                <p>
+                    Flex-grow sets the grow factor for a flex-item in the remaining space along the 
+                    main axis of the flex-container. If flex-grow for element "A" is set to 1, in
+                    a flex-container that has two other elements "B" and "C", then A will take up twice
+                    space as both B or C (assuming B and C's grow factor is set to 1).
+                </p>
+                <p>
+                    Flex-shrink sets the shrink factor for a flex-item in the remaining space along the
+                    main-axis of the flex-container. Following the prior lettering system, if the
+                    flex-shrink for element A is set to 1, it doesn't shrink it at all next to B and C
+                    (provided their shrink-factor is set to 1 as well.) If the shrink factor of A is set
+                    to 2, however, it shrinks to half the size, and B and C resize to be twice the size
+                    of A, each.
+                </p>
+                <p>
+                    Flex-basis is used to set the size of the flex-item. If the width of an item 
+                    is set to 200px, but based on available space, there is 300px that it can grow to,
+                    the flex-container will set the width to 300px. If you want to explicitly prevent
+                    shrink or grow, flex-basis ignores available space to grow in to, or unavailable 
+                    space to shrink in to.
+                </p>
+                <p>
+                    As mentione earlier, the flex shorthand property can be used to define all three of
+                    these properties at the same time:
+                </p>
+                <div class="code">
+                    <code>
+                        flex: 1 0 auto;<br>
+                        <span class="comment">/* flex-grow | flex-shrink | flex-basis */</span>
+                    </code>
+                </div>
+            </article>
+        <section> 
 
     <main>
 </body>
